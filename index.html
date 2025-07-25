@@ -17,10 +17,10 @@
     
         <form>
             <p id="helpText">Enter your email and password to register.</p>
-            <input required autocomplete="username" type="text" name="username" placeholder="Username"><br>
+            <input required autocomplete="username" type="text" name="username" placeholder="Username" ><br>
             <input required autocomplete="email" type="email" name="email" placeholder="Enter your email address"><br>
-            <input required type="password" name="password" placeholder="Password"><br>
-            <input required type="password" name="password" placeholder="Confirm Password"><br>
+            <input pattern=".{8,}" required type="password" name="password" placeholder="Password"><br>
+            <input pattern=".{8,}" required type="password" name="password" placeholder="Confirm Password"><br>
             <button type="submit">Register</button>
         </form>
 </body>
