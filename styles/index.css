@@ -22,7 +22,7 @@ body {
 .section1 .left-side {
     display: inline-block;
     vertical-align: top;
-    width: 60%;
+    max-width: 560px;
     padding: 68px 0 85px 40px;
     white-space: normal;
 
@@ -59,7 +59,7 @@ body {
 .section1 .right-side {
     display: inline-block;
     vertical-align: top;
-    width: 40%;
+    width: 640px;
     min-height: 450px;
     position: relative;
     text-align: right;
@@ -73,7 +73,7 @@ body {
 
     .bigImg {
         bottom: 0;
-        right: 0;
+        left: 93px;
         width: auto;
         height: 100%;
     }
