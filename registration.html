@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/Normalize.css">
+    <link rel="stylesheet" href="styles/Reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <p class="auth" id="login">Login</p>
+        <p class="auth" id="line"></p>
+        <p class="auth active" id="register">Register</p>
+    </div>
+    
+        <form>
+            <p id="helpText">Enter your email and password to register.</p>
+            <input required autocomplete="username" type="text" name="username" placeholder="Username" ><br>
+            <input required autocomplete="email" type="email" name="email" placeholder="Enter your email address"><br>
+            <input pattern=".{8,}" required type="password" name="password" placeholder="Password"><br>
+            <input pattern=".{8,}" required type="password" name="password" placeholder="Confirm Password"><br>
+            <button type="submit">Register</button>
+        </form>
+</body>
+
+</html>
