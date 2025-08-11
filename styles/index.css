@@ -227,6 +227,7 @@ header {
 
     img {
         width: 100%;
+        height: auto;
     }
 
 }
@@ -284,7 +285,7 @@ header {
             height: 300px;
             display: inline-block;
             width: calc(33.333% - 20px);
-            margin: 0 10px 68px 10px;
+            margin: 0 10px 108px 10px;
             font-size: 14px;
             box-sizing: border-box;
             padding: 32px 4px 20px;
