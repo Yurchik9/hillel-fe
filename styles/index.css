@@ -208,6 +208,7 @@ nav {
                     background: #1A712A;
 
                     >a {
+                        font-weight: 700;
                         color: #fff;
                     }
 
