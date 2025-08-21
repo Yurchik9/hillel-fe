@@ -26,3 +26,28 @@
         url('../fonts/CeraPro-Black.woff2') format("woff2"), 
         url('../fonts/CeraPro-Black.ttf') format("TrueType");
 }
+
+@font-face {
+    font-family: 'EncodeSansExpanded';
+    font-weight: 900;
+    src: local('Encode Sans Expanded'),
+        url('../fonts/EncodeSansExpanded-Black.ttf') format("TrueType");
+}
+@font-face {
+    font-family: 'EncodeSansExpanded';
+    font-weight: 700;
+    src: local('Encode Sans Expanded'),
+        url('../fonts/EncodeSansExpanded-Bold.ttf') format("TrueType");
+}
+@font-face {
+    font-family: 'EncodeSansExpanded';
+    font-weight: 500;
+    src: local('Encode Sans Expanded'),
+        url('../fonts/EncodeSansExpanded-Medium.ttf') format("TrueType");
+}
+@font-face {
+    font-family: 'EncodeSansExpanded';
+    font-weight: 400;
+    src: local('Encode Sans Expanded'),
+        url('../fonts/EncodeSansExpanded-Regular.ttf') format("TrueType");
+}
