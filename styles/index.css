@@ -663,3 +663,213 @@ nav {
         }
     }
 }
+
+
+
+.footerContainer {
+    font-family: Arial, sans-serif;
+    color: #3d3d3d;
+    margin-bottom: 8px;
+
+    .firstPart {
+        display: flex;
+        justify-content: space-between;
+        background: #fbfbfb;
+        padding: 24px;
+        gap: 62px;
+        height: 250px;
+
+        .leftSide {
+            display: flex;
+            gap: 30px;
+            .line{
+                max-height: 202px;
+                width: 1px;
+                background: #eaeaea;
+            }
+        }
+
+        .blog {
+            max-width: 204px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+
+
+            svg {
+                margin-bottom: 16px;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 16px;
+
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #727272;
+            }
+        }
+
+        .question {
+            flex: 1.2;
+            padding-top: 12px;
+            background: #fbfbfb;
+            display: flex;
+            flex-direction: column;
+            max-width: 354px;
+
+
+            h3 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 16px;
+                margin-bottom: 24px;
+
+            }
+
+            form {
+                display: flex;
+                margin-bottom: 18px;
+
+                input {
+                    flex: 1;
+                    padding: 10px;
+                    border: 1px solid #eaeaea;
+                    border-radius: 4px 0 0 4px;
+
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #ACACAC;
+
+                    }
+                }
+
+                button {
+                    background: #46a358;
+                    color: #fff;
+                    border: none;
+                    padding: 0 16px;
+                    border-radius: 0 6px 6px 0;
+                    cursor: pointer;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 16px;
+
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 22px;
+                color: #727272;
+            }
+        }
+    }
+
+    .secondPart {
+        background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+        display: flex;
+        align-items: center;
+        padding: 24px 28px;
+        gap: 155px;
+        height: 88px;
+
+        .contacts {
+            display: flex;
+            gap: 155px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: #3d3d3d;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+        }
+    }
+
+    .lastPart {
+        background: #fbfbfb;
+        padding: 32px 155px 32px 24px;
+        border-bottom: 1px solid #46A35833;
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+
+            .column {
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 16px;
+                    color: #3D3D3D;
+                    margin-bottom: 8px;
+
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #3D3D3D;
+
+
+                    &:hover {
+                        color: #46a358;
+                    }
+                }
+
+                &.social {
+                    h4:first-child{
+                        margin-bottom: 20px;
+                    }
+                    .icons {
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 32px;
+
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                            fill: #46a358;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .payments {
+                        img {
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.copyright {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #3D3D3D;
+    margin-bottom: 24px;
+}
