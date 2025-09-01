@@ -26,18 +26,17 @@ body {
     background: linear-gradient(97.77deg,
             rgba(245, 245, 245, 0.5) -23.46%,
             rgba(245, 245, 245, 0.5) 107.51%);
-    font-size: 0;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
 }
 
 .section1 .left-side {
-    display: inline-block;
-    vertical-align: top;
     max-width: 560px;
-    padding: 68px 0 85px 40px;
+    padding: 68px 0 85px 0;
     white-space: normal;
+    flex: 1;
 
     h3 {
         font-weight: 500;
@@ -70,13 +69,13 @@ body {
 }
 
 .section1 .right-side {
-    display: inline-block;
-    vertical-align: top;
-    width: 640px;
+    flex: 1;
     min-height: 450px;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     text-align: right;
-    white-space: normal;
 
     img {
         position: absolute;
@@ -93,11 +92,12 @@ body {
 
     .smallImg {
         bottom: 30px;
-        left: 55px;
+        right: 317px;
         width: 135px;
         height: 135px;
     }
 }
+
 
 .btn {
     border-radius: 6px;
@@ -109,6 +109,12 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        background: #46a359f1;
+    }
 }
 
 
@@ -132,6 +138,8 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
+    bottom: 10px;
 
     img {
         width: 35px;
@@ -162,6 +170,15 @@ nav {
                 line-height: 100%;
                 color: #3D3D3D;
                 position: relative;
+            }
+
+            &:hover {
+                >a {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 100%;
+
+                }
             }
 
             &:after {
@@ -262,7 +279,22 @@ nav {
     }
 }
 
+.btns {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    bottom: 10px;
 
+    svg {
+        cursor: pointer;
+        color: #3D3D3D;
+
+        &:hover {
+            color: #46A358;
+        }
+    }
+}
 
 .btnL.login {
     background: #46a358;
@@ -277,6 +309,17 @@ nav {
     border: none;
     height: 35px;
     padding: 8px 16px;
+    cursor: pointer;
+
+    svg {
+        margin-right: 4px;
+
+    }
+
+    &:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        background: #46a359f1;
+    }
 }
 
 .section2 .container {
@@ -311,7 +354,8 @@ nav {
             cursor: pointer;
         }
 
-        li.active {
+        li.active,
+        li:hover {
             color: #46a358;
             font-weight: bold;
         }
@@ -357,7 +401,8 @@ nav {
 
             }
 
-            a.active {
+            a.active,
+            a:hover {
                 box-sizing: border-box;
                 font-weight: 700;
                 font-size: 15px;
@@ -433,20 +478,22 @@ nav {
                         height: 35px;
                         cursor: pointer;
                         transition: background 0.3s ease;
-                        color: black;
 
-                        &:hover {
-                            color: #46A358;
+                        svg {
+                            color: #3D3D3D;
 
 
                         }
+
+                        &:hover {
+                            svg {
+                                color: #46A358;
+                            }
+
+                        }
                     }
-
-
                 }
             }
-
-
 
             .name {
                 font-weight: 400;
@@ -571,6 +618,11 @@ nav {
             text-transform: none;
             cursor: pointer;
 
+            &:hover {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                background: #46a359f1;
+            }
+
         }
 
     }
@@ -682,7 +734,8 @@ nav {
         .leftSide {
             display: flex;
             gap: 30px;
-            .line{
+
+            .line {
                 max-height: 202px;
                 width: 1px;
                 background: #eaeaea;
@@ -764,6 +817,11 @@ nav {
                     font-size: 18px;
                     line-height: 16px;
 
+                    &:hover {
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                        background: #46a359f1;
+                    }
+
                 }
             }
 
@@ -836,9 +894,10 @@ nav {
                 }
 
                 &.social {
-                    h4:first-child{
+                    h4:first-child {
                         margin-bottom: 20px;
                     }
+
                     .icons {
                         display: flex;
                         gap: 10px;
@@ -849,6 +908,11 @@ nav {
                             height: 30px;
                             fill: #46a358;
                             cursor: pointer;
+
+                            &:hover {
+                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                                color: #46a359f1;
+                            }
                         }
                     }
 
