@@ -10,21 +10,44 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-    <div class="auth-container">
-        <p class="auth" id="login">Login</p>
-        <p class="auth" id="line"></p>
-        <p class="auth active" id="register">Register</p>
-    </div>
-    
+<body class="overlay">
+    <div class="preloader"></div>
+    <main>
+        <div class="auth-container">
+            <p class="auth" id="login">Login</p>
+            <p class="auth" id="line"></p>
+            <p class="auth active" id="register">Register</p>
+        </div>
+
         <form>
             <p id="helpText">Enter your email and password to register.</p>
-            <input required autocomplete="username" type="text" name="username" placeholder="Username" ><br>
+            <input required autocomplete="username" type="text" name="username" placeholder="Username"><br>
             <input required autocomplete="email" type="email" name="email" placeholder="Enter your email address"><br>
             <input pattern=".{8,}" required type="password" name="password" placeholder="Password"><br>
-            <input pattern=".{8,}" required type="password" name="password" placeholder="Confirm Password"><br>
+            <input pattern=".{8,}" required type="password" name="confirmPassword" placeholder="Confirm Password"><br>
+
+
+            <div class="checkbox-wrapper-19">
+                <input type="checkbox" id="cbtest-19" required />
+                <label for="cbtest-19" class="check-box"></label>
+                <span class="checkbox-text">I agree to the Terms & Conditions</span>
+            </div>
+
             <button type="submit">Register</button>
         </form>
+        <script>
+            window.addEventListener("load", function () {
+                const spinner = document.querySelector(".preloader");
+                const main = document.querySelector("main");
+
+                setTimeout(() => {
+                    document.querySelector("body").classList.remove("overlay");
+                    spinner.style.display = "none";
+                    main.style.display = "block";
+                }, 1000);
+            });
+        </script>
+    </main>
 </body>
 
 </html>
