@@ -1,0 +1,132 @@
+@media screen and (max-width: 576px) {
+    header {
+
+        .container,
+        nav ul,
+        .btns {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav ul {
+            gap: 20px;
+        }
+    }
+
+
+    .section1 {
+        .container {
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left-side {
+            h1 {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+
+        .right-side {
+            display: none;
+        }
+    }
+
+
+    .section2 {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-side {
+            display: none;
+        }
+
+        .right-side .products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            .product {
+                width: 100%;
+                max-width: 360px;
+                height: auto;
+                box-sizing: border-box;
+
+                .thumb {
+                    width: 100%;
+                    height: auto;
+                    min-height: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+
+                .name {
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+
+                .price {
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #46A358;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+    .section3 {
+        .container {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+
+    .section4 {
+        .blogCards {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+
+    .footerContainer {
+        .firstPart {
+            .left-side {
+                @media screen and (max-width: 399px) {
+                    display: block;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .secondPart {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lastPart {
+            .links {
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+}

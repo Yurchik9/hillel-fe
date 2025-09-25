@@ -1,0 +1,194 @@
+@media screen and (max-width: 769px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    header {
+        .container {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: none;
+        }
+
+        svg {
+            display: none;
+        }
+
+        .btnL {
+            display: block;
+
+            svg {
+                display: block;
+            }
+        }
+
+        .logo {
+            margin: 0;
+        }
+    }
+
+    .section1 .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section1 .left-side {
+        max-width: 100%;
+
+        h1 {
+            font-size: 48px;
+            line-height: 54px;
+        }
+    }
+
+    .section1 .right-side {
+        display: flex;
+        justify-content: center;
+
+        img.bigImg {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            left: auto;
+        }
+
+        img.smallImg {
+            display: none;
+        }
+    }
+
+    .section2 {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .left-side {
+            display: none;
+        }
+
+        .right-side {
+            width: 100%;
+
+            & .filters {
+                .tabs {
+                    display: flex;
+                    gap: 10px;
+                    @media screen and (max-width: 698px) {
+                        display: none;
+                    }
+                }
+            }
+
+            .products {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .product {
+                    width: calc((100% - 20px) / 2);
+                    height: auto;
+
+                    
+                }
+            }
+
+            .pagination {
+                margin-top: 32px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .section3 .container {
+        flex-direction: column;
+        gap: 24px;
+
+        .left-side,
+        .right-side {
+            width: 100%;
+        }
+    }
+
+    .section4 {
+        .container {
+            max-width: 90%;
+        }
+
+        .blogCards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .card {
+                width: calc((100% - 20px) / 2);
+
+                @media screen and (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footerContainer {
+        .firstPart {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: auto;
+
+            .left {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .text {
+                    width: 100%;
+                }
+
+                form {
+                    width: 100%;
+                }
+            }
+        }
+
+        .secondPart {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            text-align: center;
+        }
+
+        .lastPart {
+            justify-content: center;
+            text-align: center;
+
+            .links .column:not(.social) {
+                display: none;
+               
+            }
+            .links{
+                justify-content: center;
+            }
+            .social {
+                display: flex;
+                gap: 16px;
+                justify-content: center;
+            }
+        }
+    }
+
+    .copyright {
+        display: none;
+    }
+}
